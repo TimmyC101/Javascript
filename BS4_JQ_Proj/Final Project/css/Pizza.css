@@ -1,0 +1,74 @@
+body {
+    background-image: url("../img/pizza.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+}
+
+.TC-shadow {
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.flex-container {
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 75%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(200, 200, 200);
+}
+
+.radio-container {
+    border-right: 2px solid black;
+    padding-left: 1rem;
+    width: calc(100%/3);
+}
+
+.radio-items, .checkbox-items {
+    margin-right: 5px;
+}
+
+.table {
+    border: 2px solid black;
+    background-color: rgb(221, 75, 75);
+    visibility: hidden;
+    z-index: 1;
+    position: fixed;
+    left: 25%;
+    top: 30%;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+.popup {
+    width: 15%;
+    margin: 1rem;
+}
+
+.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
